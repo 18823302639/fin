@@ -1,0 +1,55 @@
+<form action="{:url('Index/hongk')}" method="post"  class="form form-horizontal" id="signupForm">
+    <div class="row cl">
+        <input type="hidden" name="category_id" value="3">
+        <label class="form-label col-xs-3 col-sm-3">公司名称：</label>
+        <div class="formControls col-xs-9 col-sm-9">
+            <input type="text" class="input-text" name="company_name" autocomplete="off" placeholder="请输入公司名称" required="required" >
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-3 col-sm-3">是否开户：</label>
+        <div class="formControls">
+            <div class="radio-box">
+                <input type="radio" id="radio-1" name="open_account" checked value="0">
+                <label for="radio-1">是</label>
+            </div>
+            <div class="radio-box">
+                <input type="radio" id="radio-2" name="open_account"  value="1">
+                <label for="radio-2">否 </label>
+            </div>
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-3 col-sm-3">联系人：</label>
+        <div class="formControls col-xs-9 col-sm-9">
+            <input type="text" path="category_name" required="required" class="input-text" name="category_name"  placeholder="请输入您的姓名">
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-3 col-sm-3">联系电话：</label>
+        <div class="formControls col-xs-9 col-sm-9">
+            <input type="tel" class="input-text" name="category_tel"  required="required" placeholder="请输入您的联系方式">
+        </div>
+    </div>
+    <div class="row cl">
+        <div class="formControls">
+            <div class="radio-box">
+                <input type="checkbox" id="checkbox-1"  required="required" >
+                <label for="checkbox-1"  >我已确认提供的个人信息准确无误，并以此作为项目办理的有效信息。</label>
+            </div>
+        </div>
+    </div>
+    <div class="row cl">
+        <div class="formControls">
+            <div class="radio-box">
+                <input type="checkbox" id="checkbox-2"  checked required="required">
+                <label for="checkbox-2" class="checkout" >请详细阅读并确认《中港星企业服务商城服务条款》。 </label>
+            </div>
+        </div>
+    </div>
+    <div class="row cl text-c" style="margin-top:25px;">
+        <div class="col-xs-12 col-sm-12 ">
+            <input style="height:100%;padding:8px 35px;"  class="btn btn-danger radius goHongk" type="submit"  value="立即办理">
+        </div>
+    </div>
+</form>
